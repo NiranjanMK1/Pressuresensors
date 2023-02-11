@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-def get_requirements():
+def get_requirements()-> List[str]:
     with open(requirement.txt) as requirement_file:
         requriement_list = requirement_file.readlines()
         requriement_list = [requirement_name.replace("\n","") for requirement_name in requriement_list]
@@ -16,8 +16,6 @@ setup(
     author= 'ineuron',
     author_email = "niranjanumk@gmail.com",
     packages = find_packages()
-    
-    
     
     )
 
